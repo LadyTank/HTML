@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire HTML</title>
+    <!-- la feuille de style externe -->
+    <link rel="stylesheet" href="../css/style_formulaire.css">
+</head>
+<body>
+    <h1>Un formulaire HTML</h1>
+
+    <h2> Lien vers <a href="00_liens.html">La page des liens</a></h2>
+
+    <hr>
+    <h3>Un formulaire</h3>
+
+    <!-- je déclare le formulaire avec FORM -->
+
+    <!-- les attributs action et method seront indipensables pour envoyer le formulaire -->
+
+    <!-- action= on mettra un fichier, dans method= on mettra le protocole POST ou GET -->
+
+    <form action="formulaire.php" method="POST">
+
+        <!-- FIELDSET = champs d'élément du formulaire -->
+
+        <fieldset>
+
+            <!-- Legend = légende du FIELDSET -->
+
+            <legend>Nom et Prénom</legend>
+
+            <!-- le binôme LABEL = étiquette et INPUT = champs de saisie de données(ou LABEL et SELECT = champs pour sélectionner etc) -->
+            
+            <label for="nom">Nom *</label>
+            
+            <input type="text" name="nom" id="nom" placeholder="Votre nom de famille" required>
+            
+            <!-- LABEL vient avec l'attribut FOR qui contient l'ID (identifiant) de l'input. Attention! Cet ID est unique sur la page -->
+
+            <label for="prenom">Prénom *</label>
+
+            <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+
+            <label for="email">Email *</label>
+
+            <input type="email" name="email" id="email" placeholder="Votre courriel" required>
+
+            <label for="genre">Votre sexe</label>
+           
+            <select name="genre" id="genre">
+                <option value="F">Femme</option>
+                <option value="H">Homme</option>
+                <option value="A">Autres</option>
+            </select>
+
+            <label for="tranche">Votre tranche d'âge</label>
+            
+            <!-- attribut CHECKED le bouton radio est coché par défaut -->
+            
+            <input type="radio" name="tranche" id="tranche" checked> de 7 à 77 ans
+            
+            <input type="radio" name="tranche"> plus de 77 ans
+
+        </fieldset>
+        <fieldset>
+            <legend>Informations de connexion</legend>
+
+            <label for="pseudo">Pseudonyme*</label>
+            
+            <!-- un INPUT peut être de différents type ex. text, password, email, etc -->
+            
+            <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" required>
+
+            <label for="mdp">Mot de passe</label>
+
+            <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Connectez-vous</legend>
+
+            <!-- pour ré-initialiser le formulaire = un INPUT de type reset -->
+            
+            <input type="reset" name="annuler" value="Effacer">
+
+            <!-- pour envoyer le formulaire = un INPUT de type submit -->
+
+            <!-- L'attribut value envoie une valeur, une information utile à l'envoie du formulaire ou à la récupération de données -->
+            
+            <input type="submit" name="connexion" value="Se connecter">
+
+        </fieldset>
+
+    </form>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In amet unde laborum pariatur vitae, veritatis quos sequi laudantium cupiditate quae debitis corporis quam! Suscipit dolorem facilis pariatur ullam, odit minus?</p>
+</body>
+</html>

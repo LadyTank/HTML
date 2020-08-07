@@ -1,0 +1,26 @@
+body{
+    background-color: azure;    
+}
+/* les styles pour les tableaux */
+
+/* c'est bien aussi d'utiliser en développement ces styles  pour une bordure sur tout le tableau */
+/* la bordure pour le table et les cellules */
+table, th, td {
+   border: 1px solid red;
+   /* border collapse= détermine si les bordures d'un tableau sont séparées ou fusionnées */
+   /* COLLAPSE= fusionnée */
+   border-collapse: collapse;
+}
+
+th, td {
+    /* padding = rembourrage de la marge intérieure */
+    padding: 15px;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: right;
+}

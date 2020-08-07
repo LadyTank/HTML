@@ -1,0 +1,35 @@
+body {
+    background-color: pink;
+
+}
+
+table, tr, td {
+    /* border: 3px solid black; */
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table {
+    background-color: white;
+}
+
+td {
+    width: 4em;
+    height: 4em;
+}
+
+.jaune {
+    background-color: yellow;
+}
+
+.bleu {
+    background-color: blue;
+}
+
+.noir {
+    background-color: black;
+}
+
+.gris {
+    background-color: grey;
+}

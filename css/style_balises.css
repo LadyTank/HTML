@@ -1,0 +1,33 @@
+body {
+    /*famille de typo, d'abord du Verdana et si il n'y a pas de Verdana, une typo sans serif */
+    background-color: lightpink;
+}
+
+/* nous avons un ID qui est déclaré et qui s'applique à un seul élément de la page de laquelle est liée la feuille de style */
+/* une déclaration de style s'appliquant à un ID est précédé d'un dièse, ex: #un-id */
+#wrapper {
+        border: 1px solid white;
+        width: 90%;
+        margin: 0 auto;
+        background-color: lightgray;
+}
+
+header, footer {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+}
+
+/* içi nous avons 2 classes qui peuvent s'appliquer à un ou  plusieurs élement de la page. element = balise */
+/* un nom de classe est dans la feuille de style précédé d'un point en caractère. ex: .ma-classe */
+.fond-bleu {
+    background-color: lightblue;
+    border-left: 4px solid white;
+}
+
+.en-italique {
+    font-style: italic;
+}

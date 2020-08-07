@@ -1,0 +1,41 @@
+body{
+    background-color: khaki;
+}
+
+section {
+    background-color: lavenderblush;
+}
+
+section p {
+    /* tous les p à l'intérieur de la balise section ont une couleur olive  */
+    color:red;
+}
+
+section p:first-child {
+    /* FIRST CHILD= le premier p à l'intérieur de la balise SECTION, son premier enfant sera ciblé */
+    color: darkblue
+}
+
+section p:last-child {
+    /* LAST CHILD = le dernier enfant de la balise SECTION */
+    text-transform: uppercase;
+}
+
+section p:nth-child(5), section p:nth-child(9){
+    text-transform: capitalize;
+}
+
+section p:nth-child(even) {
+    /* içi ce sont tous les pairs even= pair*/
+    background-color: lightgreen;
+}
+
+section p:nth-child(odd) {
+    /* içi ce sont tous les impairs */
+    background-color: lightsteelblue;
+}
+
+section p:nth-child(7){
+    /* Le tantième, ou le 7ème p de chaque section sera ciblé */
+    background-color: white;
+}

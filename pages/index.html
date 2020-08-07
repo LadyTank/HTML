@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Une page index</title>
+		<!-- mes premiers styles css -->
+		<!-- 1- pour le css on appelle un élément ou une balise -->
+		<!-- 2- dans l'accolade on déclare le style -->
+		<!-- 3- avec sa propriété, içi background-color -->
+		<!-- 4- et sa valeur, içi la couleur -->
+
+		<!-- 3eme moyen des styles : la feuille de style en externe -->
+		<link rel="stylesheet" href="../css/style_index.css">
+		<!-- 2ème moyen d'avoir des styles: des styles dans l'entêt; il sera prioritaire par rapport au style dans la feuille de style externe -->
+		<style>
+			#main {
+				margin: 0 auto;
+				width: 1200px;
+				background-color: seashell;
+				padding: 5px;
+			}	
+
+			.inline-block {
+            display: inline-block;
+			text-align: center;
+			color:white;
+			width:135px;
+			background-color:red;
+			margin: auto;
+			text-decoration: none;
+			text-transform: inherit;
+			padding: 5px;
+			}
+
+			h1 {
+				color: red;
+			}
+
+			a {
+				background-color: white;
+			}
+
+		</style>
+		<!-- 1er moyen de mettre des styles cf. ligne 59 le style inline : à utiliser avec parcimonie -->
+	</head>
+	<body>
+		<div id="main" >
+			
+			<!-- <p>Içi, je vais aller vers la page <a href="00_liens.html">00_liens</a></p> -->
+			
+			<h1>Cours et exos HTML</h1>
+			
+			<nav>
+				<a href="index.html" class="inline-block">Accueil</a>
+				<a href="../pages/00_liens.html" title="Les liens" class="inline-block">Les liens</a>
+				<a href="../pages/00_structure.html" title="La structure" class="inline-block">La structure</a>
+				<a href="../pages/02_balises.html" title="Les balises" class="inline-block">Les balises</a>
+				<a href="../pages/03_formulaire.html" title="Le formulaire" class="inline-block">Le formulaire</a>
+				<a href="../pages/04_images.html" title="Les images" class="inline-block">Les images</a>
+				<a href="../pages/05_tableaux.html" title="Les tableaux" class="inline-block">Les tableaux</a>
+				<a href="../pages/06_selecteurs.html" title="Les sélecteurs" class="inline-block">Les sélecteurs</a>
+			</nav>
+			
+			<p id="haut">Vers le bas de la page: <a href="#bas">cliquez içi!</a></p>
+			
+			<h2>Des balises HTML...</h2>
+			
+			<p>Ceci est un paragraphe très court, en une seule phrase.</p><!--P = paragraphe-->
+			<p>Longtemps, je me suis couché de bonne heure. Parfois, à peine ma bougie éteinte, mes yeux se fermaient si vite que je n’avais pas le temps de me dire : « Je m’endors. » Et, une demi-heure après, la pensée qu’il était temps de chercher le sommeil m’éveillait ; je voulais poser le volume que je croyais avoir encore dans les mains et souffler ma lumière ; je n’avais pas cessé en dormant de faire des réflexions sur ce que je venais de lire, mais ces réflexions avaient pris un tour un peu particulier ; il me semblait que j’étais moi-même ce dont parlait l’ouvrage : une église, un quatuor, la rivalité de François Ier et de Charles Quint. Cette croyance survivait pendant quelques secondes à mon réveil ; elle ne choquait pas ma raison mais pesait comme des écailles sur mes yeux et les empêchait de se rendre compte que le bougeoir n’était plus allumé. Puis elle commençait à me devenir inintelligible, comme après la métempsycose les pensées d’une existence antérieure ; le sujet du livre se détachait de moi, j’étais libre de m’y appliquer ou non ; aussitôt je recouvrais la vue et j’étais bien étonné de trouver autour de moi une obscurité, douce et reposante pour mes yeux, mais peut-être plus encore pour mon esprit, à qui elle apparaissait comme une chose sans cause, incompréhensible, comme une chose vraiment obscure. Je me demandais quelle heure il pouvait être ; j’entendais le sifflement des trains qui, plus ou moins éloigné, comme le chant d’un oiseau dans une forêt, relevant les distances, me décrivait l’étendue de la campagne déserte où le voyageur se hâte vers la station prochaine ; et le petit chemin qu’il suit va être gravé dans son souvenir par l’excitation qu’il doit à des lieux nouveaux, à des actes inaccoutumés, à la causerie récente et aux adieux sous la lampe étrangère qui le suivent encore dans le silence de la nuit, à la douceur prochaine du retour</p>
+			<hr><!--HR Horizontal Rule-->
+			
+			
+			<h2>Mignonne, allons voir si la rose</h2>
+			<p><em>A Cassandre</em></p><!--em = empahsis, avec emphase rendu en italique-->
+			
+			<p>Mignonne, allons voir si la rose<br>
+			Qui ce matin avoit desclose<br>
+			Sa robe de pourpre au Soleil,<br>
+			A point perdu ceste vesprée<br>
+			Les plis de sa robe pourprée,<br>
+			Et son teint au vostre pareil.</p>
+			
+			<p>Las ! voyez comme en peu d'espace,<br>
+			Mignonne, elle a dessus la place<br>
+			Las ! las ses beautez laissé cheoir !<br>
+			Ô vrayment marastre Nature,<br>
+			Puis qu'une telle fleur ne dure<br>
+			Que du matin jusques au soir !</p>
+			
+			<p>Donc, si vous me croyez, mignonne,<br>
+			Tandis que vostre âge fleuronne<br>
+			En sa plus verte nouveauté,<br>
+			Cueillez, cueillez vostre jeunesse :<br>
+			Comme à ceste fleur la vieillesse<br>
+			Fera ternir vostre beauté.</p>
+			<p><strong>Pierre de Ronsard</strong></p><!--strong pour un rendu en gras-->
+			<hr>
+			<h2 style="background-color:black;color: white;">Quelques jurons du Capitaine Haddock</h2>
+			<!--içi on met une liste-->
+			<ul><!--ul = unordered list , liste non-ordonnées-->
+				<li>Bachibouzouk!</li><!--li=liste item élément de liste-->
+				<li>Mille milliards de mille saborts</li>
+			</ul>
+			<hr>
+			<h2>Pour faire le portrait d'un oiseau</h2>
+			<p><em>par Jacques Prévert</em>
+			</p>
+			
+			<p>Peindre d'abord une cage <br>
+			Avec une porte ouverte <br>
+			Peindre ensuite quelque chose de joli<br>
+			Quelque chose de simple<br>
+			Quelque chose de beau <br>
+			Quelque chose d'utile pour l'oiseau</p>
+			
+			<p>Placer ensuite la toile contre un arbre<br>
+			Dans un jardin<br>
+			Dans un bois<br>
+			Ou dans une forêt<br>
+			Se cacher derrière l'arbre<br>
+			Sans rien dire<br>
+			Sans bouger...</p>
+			
+			<p>Parfois l'oiseau arrive vite<br>
+			Mais il peut aussi mettre de longues années<br>
+			Avant de se décider<br>
+			Ne pas se décourager<br>
+			Attendre<br>
+			Attendre s'il le faut pendant des années<br>
+			La vitesse ou la lenteur de l'arrivée de l'oiseau<br>
+			N'ayant aucun rapport<br>
+			Avec la réussite du tableau</p>
+			
+			<p>Quand l'oiseau arrive<br>
+			S'il arrive<br>
+			Observer le plus profond silence<br>
+			Attendre que l'oiseau entre dans la cage
+			Et quand il est entré<br>
+			Fermer doucement la porte avec le pinceau<br>
+			Puis<br>
+			Effacer un à un tous les barreaux<br>
+			En ayant soin de ne toucher aucune des plumes de l'oiseau</p>
+			
+			<p>Faire ensuite le portrait de l'arbre<br>
+			En choisissant la plus belle de ses branches<br>
+			Pour l'oiseau<br>
+			Peindre aussi le vert feuillage et la fraîcheur du vent<br>
+			La poussière du soleil<br>
+			Et le bruit des bêtes de l'herbe dans la chaleur de l'été<br>
+			Et puis attendre que l'oiseau se décide à chanter</p>
+			
+			<p>Si l'oiseau ne chante pas<br>
+			C'est mauvais signe<br>
+			Signe que le tableau est mauvais<br>
+			Mais s'il chante c'est bon signe<br>
+			Signe que vous pouvez signer<br>
+			
+			<p>Alors vous arrachez tout doucement<br>
+			Une des plumes de l'oiseau<br>
+			Et vous écrivez votre nom dans un coin du tableau </p>
+			
+			<hr>
+			<h2>La recette des crêpes</h2>
+			<h3>Ingrédients:</h3>
+			<ul>
+				<li>Farine 200 gr</li>
+				<li>Oeufs 3</li>
+				<li>Lait 1/2 litre</li>
+				<li>Sucre 60 g</li>
+				<li>Sel 1 pincée</li>
+			</ul>
+			<h3>Préparation</h3>
+			<ol>
+				<li>Verser la farine, le sucre et le sel dans un bol</li>
+				<li>Mélanger avec le lait</li>
+				<li>Incorporer les oeufs préalablement mélangés</li>
+				<li>Remuer jusqu'à obtention d'une pate homogène</li>
+				<li>Laisser reposer au frigo la préparation, minimum 4 heures.</li>
+			</ol>
+			
+			<hr>
+			<h2>Des citations</h2>
+			<!--q = quote citation, courte citation avec guillemets-->
+			<p>Victor Hugo a déclaré en 1865 <q>S'il n'en reste qu'un, je serai celui là !</q></p>
+			<!--cite = citation courte, rendu en italique-->
+			<p>Jules Cécar, en franchissant le Rubicon, a dit <cite> Alea jacta est. </cite> </p>
+			
+			<hr>
+			<h2>L'incipit de <em>A la recherche du temps perdu</em></h2>
+				<!--blockquote, bloc de citation rendu paragraphe avec alinéa-->
+				<blockcode>
+				« Longtemps, je me suis couché de bonne heure. Parfois, à peine ma bougie éteinte, mes yeux se fermaient si vite que je n’avais pas le temps de me dire : <q> Je m’endors.</q> Et, une demi-heure après, la pensée qu’il était temps de chercher le sommeil m’éveillait ; je voulais poser le volume que je croyais avoir encore dans les mains et souffler ma lumière ; je n’avais pas cessé en dormant de faire des réflexions sur ce que je venais de lire, mais ces réflexions avaient pris un tour un peu particulier ; il me semblait que j’étais moi-même ce dont parlait l’ouvrage : une église, un quatuor, la rivalité de François Ier et de Charles Quint. »
+				</blockcode>
+			<hr>
+			<!--pré = préformaté rendu fond/typo/police à chasse fixe -->
+			<pre>Un paragraphe préformaté</pre>
+			<pre>la LA xi</pre>
+			<p>la LA xi</p>
+			
+			<hr>
+			<h2>La balise &lt;code> et la balise &lt;kbd></h2>
+			<!--HTML entities sert à restituer visuellement les caractères spéciaux-->
+			<p>La balise code sert à présenter du code exe. pour faire un paragraphe, il nous faut les balises <code> &lt;P></code></p>
+			<p>La balise signifie une manipulation au clavier ex; pour ouvrir sur PC une fenêtre, il faut <kbd>CTRL+N</kbd></p>
+			
+			<hr>
+			<h2>D'autres balises sémentiques</h2>
+			<p><abbr>ONU</abbr> est l'acronyme de Oragnisation des Nations-Unies</p>
+			<p>L&aelig;ticia est une chanson de Serge Gainsbourg</p>
+			<p>&real;</p>
+			<p>&frac23;</p>
+			<p>&boxVR;&boxVL;</p>
+			<hr>
+			<p id="bas">Vers le haut de la page <a href="#haut">Cliquez içi!</a></p>	
+			
+		</div>
+	</body>
+</html>

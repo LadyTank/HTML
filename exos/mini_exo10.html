@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini exo 10</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .rose {
+            background-color: pink;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .display-none {
+        display: none;
+        }
+
+        .display-inline {
+            display: inline;
+        }
+
+        .display-block {
+            display: block;
+        }
+
+        .inline-block {
+            display: inline-block;
+            text-align: center;
+            width: 400px;
+            background-color:yellow;
+        }
+
+
+        p {
+            background-color: white;
+            width: 550px;
+            height: 100px;  
+        }
+
+        .encadre {
+            border: 1px black; 
+            padding: 2px;
+            background-color:cyan;
+        }
+
+        .carre {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+        }
+
+        .petit-carre {
+            width: 50px;
+            height: 50px;
+            background-color:whitesmoke;
+            float: right;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Display</h1>
+    <div class="rose">
+        <h2>1 / Comportement <em> normal de chez normal</em></h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur praesentium repellat laborum, ipsam delectus dicta libero, tempore iure cum odit nihil explicabo, accusantium impedit maiores! Ducimus iure laborum temporibus inventore!</p>
+        <p>Et là je vais aller sur le site <a href="https://www.lemonde.fr/">Le Monde</a> qui est un journal du soir.</p>
+    </div>
+
+    <div class="rose">
+        <!-- içi, on utilise la balise span pour attribuer une class précise -->
+        <h2>2 / display: none;</h2>
+        <p> A / Lorem ipsum <mark> dolor sit amet consectetur adipisicing elit.</mark> Repudiandae soluta voluptas corporis deserunt ilque ipsa. <span class="encadre"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Dolorum deserunt, dignissimos autem quas quia <del> soluta unde illum molestias suscipit rem,</del> ducimus doloremque quae? Non perspiciatis commodi, distinctio reprehenderit labore temporibus.</p>
+        <!-- DIPLAY NONE rend le paragraphe invisible -->
+        <p class="display-none"> B / Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, hic repudiandae  ipsum, dolor sit amet consectetur adipisicing elit. Corporis, deserunt magnam maxime quis similique alias a incidunt dolorum iste! Earum soluta quas consequuntur quis delectus accusamus ipsum velit repudiandae repellat error!</p>
+        <p> C / Mais où est passer le paragraphe B ?</p>
+    </div>
+
+    <div class="rose"> 
+        <!-- diplay: inline; affiche un élément block en effet inline. de plus, aucune propriété de largeur ou de hauteur n'auront d'effet. -->
+        <h2>3 /display: inline;</h2>
+        <p>A / Lorem ipsum dolor sit, amet consem et ipsa iusto. Sapiente soluta natus suscipit debitis, atque cum consequuntur dolorum numquam explicabo!</p>
+       
+        <p class="display-inline">B / Lorem, ipsum dos? Expedita ratione natus perspiciatis molestiae enim? Inventore soluta quod commodi ad quam earum enim maxime vero.</p>
+        <p class="display-inline"> C / Lorem ipsum dincidunt facilis hic officia quo sint, provident blanditiis aliquid magni ipsam delectus nam ipsum dolor?</p>
+    </div>
+
+    <div class="rose">
+        <!-- diplay: block; affiche un élément comme un bloc. il commence sur une nouvelle ligne et prend toute la largeur -->
+        <h2>4 / display: block;</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum delectus corporis fuga eveniet mollitia, omnis ab sunt saepe, facere consequatur a iure alias illo error ea numquam, sed dicta nostrum! je vais sur <a href="#" class="display-block encadre">le site de Gravillon</a>  qui est un site de vélo.
+    </div>
+
+    <div class="rose">
+        <h2>display: inline-block</h2>
+        je vais sur <a href="#" class="inline-block">le site de Gravillon</a>  qui est un site de vélo.
+    </div>
+
+    <div class="carre">
+        <div class="petit-carre">1</div>
+    </div>
+</body>
+</html>

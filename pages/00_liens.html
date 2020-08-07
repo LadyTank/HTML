@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les liens hypertextes</title>
+    <!-- La balise STYLE est en générale après title dans head, obligatoirement. -->
+    <style> 
+        body {
+            background-color: orchid;
+            }
+
+        h1 {
+            background-color: white;
+            color: blue;
+            text-transform: uppercase;
+            text-align: center;
+            }
+    
+        h2 {
+            background-color:gainsboro;
+        }   
+
+        p {
+            background-color:whitesmoke;
+            color: blue;
+        }
+        /* les styles pour les liens */
+        a {
+            /* pas de soulignement */
+            text-decoration: none;
+        }
+        /* les pseudo-classes dans cet ordre là ! */
+        /* un lien non visité ou pas encore visité  */
+        a:link {
+           color: white;
+           background-color:orange;
+        }
+        /* un lien qui a été visité */
+        a:visited {            
+            color: red;
+            background-color: skyblue;
+        }
+        /* le lien au survol du curseur */
+        a:hover {
+           color: orange;
+           background-color: white;
+        }
+        /* quand on clique sur le lien et que l'on maintient cliqué */
+        a:active {
+           color: white;
+           background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Les liens hypertextes</h1>
+    <hr>
+    <h2>Les ancres</h2>
+    <!-- 1er type de lien hypetexte, une ancre pour aller d'une partie à l'autre de la page
+    une ancre a besoin de la balise A et son attribut HREF="#nomdelid" et d'un élément ayant un ID, un identifiant -->
+    <p id="haut">Vers le bas de la page: <a href="#bas">cliquez içi!</a></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, repellat temporibus dolore veritatis veniam corrupti ex eaque labore nemo est fuga unde, eos cumque praesentium. Corrupti illum nesciunt maxime atque!</p>
+    <!-- Les liens internes nous permettent de naviguer d'une page à l'autre dans un même site
+    dans l'attribut HREF de A, on écrit un chemin relatif au dossier dans lequel se trouve les pages -->
+    <h2>Les liens internes</h2>
+    <p>Içi, je vais aller vers la page <a href="01_index.html">01_index</a></p>
+
+    <h2>Les liens externes</h2>
+    <p>Içi, je vais aller sur un site pour découvrir <a target="_blank" title="les Dolomites" href="https://waitandsea.fr/road-trip-dolomites-italie-itineraires-randonnees-incontournables/">les Dolomites en Italie</a> c'est un pays magnifique!</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="bas">Vers le haut de la page <a href="#haut">Cliquez içi!</a></p>
+</body>
+</html>

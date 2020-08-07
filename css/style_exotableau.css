@@ -1,0 +1,33 @@
+body {
+    background-color: linen;
+    color: crimson;
+    text-transform: initial;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table, th, td {
+    border: 2px solid green;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+}
+
+table {
+    /* with = largeur de l'élément en pixel */
+        width: 800px;
+        /* pour centrer le tableau */
+        margin: 0 auto;
+}
+
+tr{
+    text-align: center;
+    border: 5px solid purple;
+}
+
+tr:nth-child(even) {
+    background-color: violet;
+}
+
+thead {
+    background-color: yellow;
+}

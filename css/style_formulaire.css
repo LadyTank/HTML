@@ -1,0 +1,54 @@
+body {
+    background-color: seashell;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+/* h1 et h3 sont alignés au centre */
+h1, h3 {
+    text-align: center;
+}
+
+h1 {
+    text-transform: capitalize;
+    color: purple;
+}
+
+h2 {
+    color: grey;
+    font-style: italic;
+}
+
+h3 {
+    color: purple;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+legend {
+    text-transform: lowercase;
+    color: red;
+}
+
+p, label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label {
+    color: white;
+}
+
+fieldset {
+    background-color:lightgray;
+    border: none;
+    border-style: solid;
+    border-width: 3px;
+    margin: 10px;
+}
+
+/* border-radius, arrondie sur les angles d'un élement */
+input{
+    border-radius: 25px;
+}
